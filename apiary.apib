@@ -1,0 +1,286 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# klevur-gallery
+
+API to manage horses
+
+## Horses Collection [/horses]
+
+### List All Horses [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "id": 1,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 2,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 3,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 4,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 5,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 6,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 7,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 8,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 9,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            },
+            {
+                "id": 10,
+                "barn_no": 6,
+                "hip_no": 301,
+                "current_year": 2014,
+                "sex": "C",
+                "sire": "MISSION IMPAZIBLE",
+                "consignor": "SEQUEL NEW YORK AGENT",
+                "default_photo": {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                }
+            }
+        ]
+
+
+## User [/users/{id}]
+
++ Parameters
+
+    + id: 1 (string, optional) - An unique identifier of the horse.
+
+### Get User Info [GET]
+
++ Response 201 (application/json)
+
+    + Body
+    
+        {
+            "id": 1,
+            "barn_no": 6,
+            "hip_no": 301,
+            "current_year": 2014,
+            "sex": "C",
+            "sire": "MISSION IMPAZIBLE",
+            "consignor": "SEQUEL NEW YORK AGENT",
+            "default_photo": {
+                "id": 1,
+                "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+            },
+            "x_rays": [
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/XRays/Sale+Survey0001.jpg"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/XRays/Sale+Survey0002.jpg"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/XRays/Sale+Survey0003.jpg"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/XRays/Sale+Survey0004.jpg"
+                }
+            ],
+            "photos": [
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11.JPG"
+                },
+                {
+                    "id": 1,
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12.JPG"
+                }
+            ],
+            "videos": [
+                {
+                    "id": 1,
+                    "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4256.mp4.0000.jpg",
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4256.mp4"
+                },
+                {
+                    "id": 2,
+                    "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4257.mp4.0000.jpg",
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4257.mp4"
+                },
+                {
+                    "id": 3,
+                    "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4258.mp4.0000.jpg",
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4258.mp4"
+                },
+                {
+                    "id": 4,
+                    "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4259.mp4.0000.jpg",
+                    "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4259.mp4"
+                }
+            ]
+        }
