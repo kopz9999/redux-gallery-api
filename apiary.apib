@@ -2207,7 +2207,8 @@ Query based on a JSON syntax
     + Body
 
             {
-                "conformation_id": "1"
+                "conformation_id": "1",
+                "conformation_ids": ["1", "2"]
             }
 
 + Response 201 (application/json)
@@ -2225,7 +2226,25 @@ Query based on a JSON syntax
     + Body
 
             {
-                "veterinary_id": "1"
+                "veterinary_id": "1",
+                "veterinary_ids": ["1", "2"]
+            }
+
++ Response 201 (application/json)
+
+## Horse Ratings [/horses/{hip_id}/ratings]
+
++ Parameters
+
+    + hip_id: 1 (number) - Horse HIP Number
+
+### List All Horses [POST]
+
++ Request (application/json)
+    + Body
+
+            {
+                "rating_id": "1"
             }
 
 + Response 201 (application/json)
@@ -2241,17 +2260,20 @@ Query based on a JSON syntax
                 {
                     "id": 1,
                     "url": "http://www.taylormadeadvantage.com/",
+                    "identity": 0,
                     "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad1.png"
                 },
                 {
                     "id": 2,
                     "url": "https://www.globalchampionstour.com/",
-                    "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad2.png"
+                    "identity": 1,
+                    "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad2-2.png"
                 },
                 {
                     "id": 3,
                     "url": "http://www.bloodhorse.com/",
-                    "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad3.png"
+                    "identity": 1,
+                    "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad3-2.png"
                 }
             ]
 
@@ -2345,5 +2367,40 @@ Query based on a JSON syntax
                 {
                     "id": 8,
                     "description": "X-Ray Other"
+                }
+            ]
+            
+            
+## Ratings Collection [/ratings]
+
+### List All Ratings [GET]
+
++ Response 200 (application/json)
+    + Body
+
+            [
+                {
+                    "id": 1,
+                    "description": "A+"
+                },
+                {
+                    "id": 2,
+                    "description": "A"
+                },
+                {
+                    "id": 3,
+                    "description": "B+"
+                },
+                {
+                    "id": 4,
+                    "description": "B"
+                },
+                {
+                    "id": 5,
+                    "description": "C"
+                },
+                {
+                    "id": 6,
+                    "description": "D"
                 }
             ]
