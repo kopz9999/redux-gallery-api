@@ -3142,7 +3142,7 @@ Query based on a JSON syntax
             {
                 "id": 1,
                 "current_year": 2014,
-                "hip_no": 301,
+                "hip_no": 10000,
                 "sex": "F",
                 "sire": "MISSION IMPAZIBLE",
                 "dam": "YANKEE MILLION",
@@ -3367,9 +3367,36 @@ Query based on a JSON syntax
 
 + Response 201 (application/json)
 
+## Sire Collection [/sires]
+
+### List All Sires [GET]
+
++ Response 200 (application/json)
+    + Body
+
+            [{"id":1,"name":"MISSION IMPAZIBLE"},{"id":2,"name":"I WANT REVENGE"},{"id":3,"name":"TALE OF THE CAT"},{"id":4,"name":"LEMON DROP KID"},{"id":5,"name":"CURLIN"},{"id":6,"name":"BERNARDINI"},{"id":7,"name":"TAPIZAR"},{"id":8,"name":"FREUD"},{"id":9,"name":"ENGLISH CHANNEL"},{"id":10,"name":"GHOSTZAPPER"},{"id":11,"name":"SHANGHAI BOBBY"},{"id":12,"name":"UNCLE MO"},{"id":13,"name":"FLATTER"},{"id":14,"name":"TALE OF THE CAT"},{"id":15,"name":"EMCEE"}]
+
+## Dams Collection [/dams]
+
+### List All Dams [GET]
+
++ Response 200 (application/json)
+    + Body
+
+            [{"id":1,"name":"YANKEE MILLION"},{"id":2,"name":"YELLOW FLAG"},{"id":3,"name":"ZIPPY SHANNON"},{"id":4,"name":"ABSOLUTE PATIENCE"},{"id":5,"name":"ACEY DEUCEY"},{"id":6,"name":"ADORAHY"},{"id":7,"name":"AFLEET LASS"},{"id":8,"name":"ALL THE TRICKS"},{"id":9,"name":"AMBIDAXTROUS"},{"id":10,"name":"ANDRASTE"},{"id":11,"name":"ANJORIE"},{"id":12,"name":"AS PROMISED"},{"id":13,"name":"AUSPICIOUS"},{"id":14,"name":"AWESOME BULL"},{"id":15,"name":"BACK IN THE SHADE"}]
+
+## Consignors Collection [/consignors]
+
+### List All Dams [GET]
+
++ Response 200 (application/json)
+    + Body
+
+            [{"id":1,"name":"SEQUEL NEW YORK AGENT"},{"id":2,"name":"RF HF BLOODSTOCK LLC AGENT I"},{"id":3,"name":"DENALI STUD (CRAIG & HOLLY BANDOROFF) AGENT III"},{"id":4,"name":"ROYAL BLOODSTOCK LLC AGENT VI"},{"id":5,"name":"SUMMERFIELD (FRANCIS & BARBARA VANLANGENDONCK) AGENT"},{"id":6,"name":"DENALI STUD (CRAIG & HOLLY BANDOROFF) AGENT FOR GALLAGHER'S STUD"},{"id":7,"name":"GAINESWAY AGENT I"},{"id":8,"name":"SELECT SALES AGENT I"},{"id":9,"name":"THOMAS J GALLO SALES AGENCY AGENT"},{"id":10,"name":"WINTER QUARTER FARM AGENT"},{"id":11,"name":"ST GEORGE SALES AGENT II"},{"id":12,"name":"HIGHCLERE AGENT I"},{"id":13,"name":"FOUR STAR SALES AGENT"},{"id":14,"name":"DENALI STUD (CRAIG & HOLLY BANDOROFF) AGENT FOR EDITION FARM"},{"id":15,"name":"HUNTER VALLEY FARM AGENT"}]
+
 ## Ads Collection [/ads]
 
-### List All Horses [GET]
+### List All Ads [GET]
 
 + Response 200 (application/json)
     + Body
@@ -3389,9 +3416,21 @@ Query based on a JSON syntax
                 },
                 {
                     "id": 3,
+                    "url": "http://www.fasigtipton.com/",
+                    "identity": 1,
+                    "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad4-2.png"
+                },
+                {
+                    "id": 4,
                     "url": "http://www.bloodhorse.com/",
                     "identity": 1,
                     "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad3-2.png"
+                },
+                {
+                    "id": 5,
+                    "url": "http://www.goffs.com/",
+                    "identity": 1,
+                    "image_url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Ads/ad5-2.png"
                 }
             ]
 
