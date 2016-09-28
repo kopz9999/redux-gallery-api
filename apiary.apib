@@ -47,7 +47,7 @@ API to manage horses
                 "last_name": "Doe",
                 "email": "johndoe@gmail.com",
                 "phone": "432-323-4355",
-                "horses": [1, 2, 3]
+                "horses": [301, 302, 303]
             }
 
     
@@ -2676,16 +2676,19 @@ Query based on a JSON syntax
             [
                 {
                     "id": 1,
-                    "barn_no": 6,
-                    "hip_no": 344,
                     "current_year": 2014,
-                    "sex": "C",
+                    "hip_no": 301,
+                    "sex": "F",
                     "sire": "MISSION IMPAZIBLE",
+                    "dam": "YANKEE MILLION",
+                    "dam_sire": "YANKEE VICTOR",
+                    "state": "NEW YORK",
+                    "barn_no": 6,
                     "consignor": "SEQUEL NEW YORK AGENT",
                     "default_photo": {
                         "id": 1,
-                        "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1_tn.jpg",
-                        "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                        "url": "https://s3.amazonaws.com/carouseltechnologies/Images/1.jpg",
+                        "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg"
                     },
                     "x_rays": [
                         {
@@ -2712,130 +2715,153 @@ Query based on a JSON syntax
                     "photos": [
                         {
                             "id": 1,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/1.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg"
                         },
                         {
                             "id": 2,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/2.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/2_tn.jpg"
                         },
                         {
                             "id": 3,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/3.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/3_tn.jpg"
                         },
                         {
                             "id": 4,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/4.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/4_tn.jpg"
                         },
                         {
                             "id": 5,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/5.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/5_tn.jpg"
                         },
                         {
                             "id": 6,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/6.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/6_tn.jpg"
                         },
                         {
                             "id": 7,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/7.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/7_tn.jpg"
                         },
                         {
                             "id": 8,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/8.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/8_tn.jpg"
                         },
                         {
                             "id": 9,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/9.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/9_tn.jpg"
                         },
                         {
                             "id": 10,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/10.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/10_tn.jpg"
                         },
                         {
                             "id": 11,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/11.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/11_tn.jpg"
                         },
                         {
                             "id": 12,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/12.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/12_tn.jpg"
                         },
                         {
                             "id": 13,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/13.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/13_tn.jpg"
                         },
                         {
                             "id": 14,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/14.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/14_tn.jpg"
                         },
                         {
                             "id": 15,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/15.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/15_tn.jpg"
                         },
                         {
                             "id": 16,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10.jpg"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/16.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/16_tn.jpg"
                         },
                         {
                             "id": 17,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/17.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/17_tn.jpg"
                         },
                         {
                             "id": 18,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/18.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/18_tn.jpg"
+                        },
+                        {
+                            "id": 19,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/19.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/19_tn.jpg"
+                        },
+                        {
+                            "id": 20,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/20.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/20_tn.jpg"
+                        },
+                        {
+                            "id": 21,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/21.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/21_tn.jpg"
+                        },
+                        {
+                            "id": 22,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/22.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/22_tn.jpg"
                         }
                     ],
                     "videos": [
                         {
                             "id": 1,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4256.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4256.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 2,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4257.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4257.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 3,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4258.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4258.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 4,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4259.mp4.0001.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4259.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         }
                     ]                
                 },
                 {
                     "id": 2,
-                    "barn_no": 6,
-                    "hip_no": 312313,
                     "current_year": 2014,
+                    "hip_no": 302,
                     "sex": "C",
-                    "sire": "MISSION IMPAZIBLE",
-                    "consignor": "SEQUEL NEW YORK AGENT",
+                    "sire": "I WANT REVENGE",
+                    "dam": "YELLOW FLAG",
+                    "dam_sire": "OUR EMBLEM",
+                    "state": "NEW YORK",
+                    "barn_no": 9,
+                    "consignor": "RF HF BLOODSTOCK LLC AGENT I",
                     "default_photo": {
                         "id": 1,
-                        "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1_tn.jpg",
-                        "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                        "url": "https://s3.amazonaws.com/carouseltechnologies/Images/1.jpg",
+                        "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg"
                     },
                     "x_rays": [
                         {
@@ -2862,130 +2888,153 @@ Query based on a JSON syntax
                     "photos": [
                         {
                             "id": 1,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/1.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg"
                         },
                         {
                             "id": 2,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/2.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/2_tn.jpg"
                         },
                         {
                             "id": 3,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/3.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/3_tn.jpg"
                         },
                         {
                             "id": 4,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/4.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/4_tn.jpg"
                         },
                         {
                             "id": 5,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/5.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/5_tn.jpg"
                         },
                         {
                             "id": 6,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/6.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/6_tn.jpg"
                         },
                         {
                             "id": 7,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/7.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/7_tn.jpg"
                         },
                         {
                             "id": 8,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/8.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/8_tn.jpg"
                         },
                         {
                             "id": 9,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/9.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/9_tn.jpg"
                         },
                         {
                             "id": 10,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/10.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/10_tn.jpg"
                         },
                         {
                             "id": 11,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/11.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/11_tn.jpg"
                         },
                         {
                             "id": 12,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/12.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/12_tn.jpg"
                         },
                         {
                             "id": 13,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/13.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/13_tn.jpg"
                         },
                         {
                             "id": 14,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/14.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/14_tn.jpg"
                         },
                         {
                             "id": 15,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/15.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/15_tn.jpg"
                         },
                         {
                             "id": 16,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10.jpg"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/16.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/16_tn.jpg"
                         },
                         {
                             "id": 17,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/17.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/17_tn.jpg"
                         },
                         {
                             "id": 18,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/18.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/18_tn.jpg"
+                        },
+                        {
+                            "id": 19,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/19.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/19_tn.jpg"
+                        },
+                        {
+                            "id": 20,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/20.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/20_tn.jpg"
+                        },
+                        {
+                            "id": 21,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/21.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/21_tn.jpg"
+                        },
+                        {
+                            "id": 22,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/22.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/22_tn.jpg"
                         }
                     ],
                     "videos": [
                         {
                             "id": 1,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4256.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4256.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 2,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4257.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4257.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 3,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4258.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4258.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 4,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4259.mp4.0001.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4259.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         }
                     ]                
                 },
                 {
                     "id": 3,
-                    "barn_no": 6,
-                    "hip_no": 312314,
                     "current_year": 2014,
-                    "sex": "C",
-                    "sire": "MISSION IMPAZIBLE",
-                    "consignor": "SEQUEL NEW YORK AGENT",
+                    "hip_no": 303,
+                    "sex": "F",
+                    "sire": "TALE OF THE CAT",
+                    "dam": "ZIPPY SHANNON",
+                    "dam_sire": "CITY ZIP",
+                    "state": "NEW YORK",
+                    "barn_no": "7A",
+                    "consignor": "DENALI STUD (CRAIG & HOLLY BANDOROFF) AGENT III",
                     "default_photo": {
                         "id": 1,
-                        "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1_tn.jpg",
-                        "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                        "url": "https://s3.amazonaws.com/carouseltechnologies/Images/1.jpg",
+                        "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg"
                     },
                     "x_rays": [
                         {
@@ -3012,115 +3061,135 @@ Query based on a JSON syntax
                     "photos": [
                         {
                             "id": 1,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H1.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/1.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg"
                         },
                         {
                             "id": 2,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/H2.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/2.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/2_tn.jpg"
                         },
                         {
                             "id": 3,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h3.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/3.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/3_tn.jpg"
                         },
                         {
                             "id": 4,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h4.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/4.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/4_tn.jpg"
                         },
                         {
                             "id": 5,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h5.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/5.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/5_tn.jpg"
                         },
                         {
                             "id": 6,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/h6.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/6.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/6_tn.jpg"
                         },
                         {
                             "id": 7,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w1.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/7.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/7_tn.jpg"
                         },
                         {
                             "id": 8,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w2.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/8.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/8_tn.jpg"
                         },
                         {
                             "id": 9,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w3.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/9.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/9_tn.jpg"
                         },
                         {
                             "id": 10,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w4.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/10.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/10_tn.jpg"
                         },
                         {
                             "id": 11,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w5.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/11.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/11_tn.jpg"
                         },
                         {
                             "id": 12,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w6.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/12.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/12_tn.jpg"
                         },
                         {
                             "id": 13,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w7.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/13.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/13_tn.jpg"
                         },
                         {
                             "id": 14,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w8.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/14.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/14_tn.jpg"
                         },
                         {
                             "id": 15,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w9.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/15.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/15_tn.jpg"
                         },
                         {
                             "id": 16,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w10.jpg"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/16.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/16_tn.jpg"
                         },
                         {
                             "id": 17,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w11.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/17.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/17_tn.jpg"
                         },
                         {
                             "id": 18,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12_tn.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/SamplePhotos/w12.JPG"
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/18.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/18_tn.jpg"
+                        },
+                        {
+                            "id": 19,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/19.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/19_tn.jpg"
+                        },
+                        {
+                            "id": 20,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/20.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/20_tn.jpg"
+                        },
+                        {
+                            "id": 21,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/21.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/21_tn.jpg"
+                        },
+                        {
+                            "id": 22,
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Images/22.jpg",
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/22_tn.jpg"
                         }
                     ],
                     "videos": [
                         {
                             "id": 1,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4256.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4256.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 2,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4257.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4257.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 3,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4258.mp4.0000.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4258.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         },
                         {
                             "id": 4,
-                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Thumbnails/IMG_4259.mp4.0001.jpg",
-                            "url": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Videos/IMG_4259.mp4"
+                            "thumb": "https://s3-us-west-2.amazonaws.com/kopz-projects/Klevur/Horse1/1_tn.jpg",
+                            "url": "https://s3.amazonaws.com/carouseltechnologies/Videos/ST+Walking.mp4"
                         }
                     ]                
                 }
